@@ -10,6 +10,7 @@
 ![Packagist](https://img.shields.io/badge/Stack-Lamp-yellowgreen.svg)
 ![Packagist](https://img.shields.io/badge/PHP-7.3.*-yellowgreen.svg)
 ![Packagist](https://img.shields.io/badge/License-MIT-lightgrey.svg)
+![Packagist](https://img.shields.io/badge/Status-Developing-red.svg)
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 ***
@@ -24,6 +25,13 @@ de publicidad engañosa. Para unos clientes (y personas en general), esto es fas
 
 Por eso me atreví a crear este repo para facilitar el uso de **reCaptcha**, un sistema Captcha creado
 por **Google**. Es muy fácil de implementar y nos previene de manera efectiva de los molestos BOTS.
+
+También incluí un sistema en Javascript para validar campos, contemplando el campo e-mail y el campo teléfono.
+
+Además usé **FLEX** en CSS para acomodar los campos del formulario y darle una mejor vista. Funciona para
+versiones responsivas.
+
+Por si tienes algunas dudas en la validación de campos y en estilos más modernos.
 
 ## PROYECTO
 
@@ -59,7 +67,7 @@ tu proyecto (*scaffolding*).
 
 ## USANDO PHPFORM_RECAPTCHA
 
-En cada archivo PHP o Javascript, se encuentra la explicación del código y la forma para que
+En cada archivo PHP, CSS o Javascript, se encuentra la explicación del código y la forma para que
 puedas customizarlo a tu propio proyecto.
 
 ### EN AMBIENTE DE PRODUCCIÓN
@@ -70,13 +78,23 @@ carpeta solo es para el entorno de desarrollo, no lo necesitas en producción.
 
 ### EN AMBIENTE DE DESARROLLO
 
-Apunta XAMP (o tu servidor web) al index.html de ```public_html```. Te recomiendo que lo hagas
+Apunta XAMP (o tu servidor web) al index.php de ```public_html```. Te recomiendo que lo hagas
 usando subdominios.
 
 Por ejemplo, si usas subdominios, configura ```phpform.localhost``` como tu subdominio y apunta al
-```index.html``` dentro de la carpeta ```public_html```. **No apuntes hacia la carpeta del proyecto**.
+```index.php``` dentro de la carpeta ```public_html```. **No apuntes hacia la carpeta del proyecto**.
 
-> Cada archivo PHP o Javascript dentro de ```public_html``` se encuentra debidamente comentado y documentado.
+Si no cuentas con algún servidor web o si por alguna razón no quieres usar XAMP, también puedes
+correo el servidor web de PHP, claro que necesitas tener PHP instalado en tu máquina.
+
+```
+php -S localhost:8080 -t public_html
+```
+
+Esto te permite abrir y ejecutar archivos estáticos y PHP sin problemas.
+**Esto solo es para desarrollo, no lo uses en producción**. ¡Inténtalo!
+
+> Cada archivo PHP, CSS o Javascript dentro de ```public_html``` se encuentra debidamente comentado y documentado.
 > No se te olvide echarles un ojo. Ahí podrás darte cuenta el **qué** y el **porqué** del código, que es lo
 > más importante de este proyecto.
 

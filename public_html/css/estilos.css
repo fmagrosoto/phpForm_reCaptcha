@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(100, 120, 140);
+  color: rgb(51, 51, 51);
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ######### */
+/* GENÉRICOS */
+/* ######### */
+
+.contenedor {
+  margin: auto;
+  width: 992px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.zona-flex {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.zona-flex.flex-centrado {
+  justify-content: center;
+}
+
+.zona-flex.flex-gutter {
+  margin: -.5rem;
+}
+
+.zona-flex .item-flex-33 {
+  flex: 0 0 33.3333%;
+}
+
+.zona-flex.flex-gutter .item-flex-33 {
+  flex: 0 0 calc(33.3333% - 1rem);
+  margin: .5rem;
+}
+
+.marriba-1 {
+  margin-top: 1rem !important;
+}
+
+.marriba-2 {
+  margin-top: 2rem !important;
+}
+
+hr {
+  background: linear-gradient(90deg, transparent, lightgray, transparent);
+  border: 0;
+  height: 1px;
+  margin: 2rem 0 !important;
+}
+
+
+/* ###### */
+/* HEADER */
+/* ###### */
+header {
+  background: rgb(200, 220, 240);
+  padding: 2rem 0;
+}
+
+header h1 {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .25);
+}
+
+
+/* ######## */
+/* MENSAJES */
+/* ######## */
+.mensaje-alerta {
+  align-items: center;
+  background: gray;
+  border-radius: 5px;
+  color: whitesmoke;
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+
+.mensaje-alerta > * {
+  flex: 0 0 auto;
+  padding: .5rem 1rem;
+}
+
+.mensaje-alerta > *:nth-child(2) {
+  flex: 2;
+  text-align: center;
+}
+
+.mensaje-alerta .cerrar-mensaje {
+  align-items: center;
+  background: crimson;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 20px;
+  justify-content: center;
+  width: 20px;
+}
+
+.mensaje-alerta .cerrar-mensaje:hover {
+  background: firebrick;
+  text-decoration: none;
+}
+
+.mensaje-alerta.alerta-ok {
+  background: forestgreen;
+}
+
+
+/* #### */
+/* MAIN */
+/* #### */
+main {
+  background: white;
+  border-top: 1px lightgray solid;
+  padding: 3rem 0;
+}
+
+main form fieldset {
+  background: rgb(253,253,250);
+  border: 1px lightgray solid;
+  padding: 2rem;
+  border-radius: .5rem;
+}
+
+main form fieldset legend {
+  text-align: center;
+  background: rgb(253,253,250);
+  padding: .25rem 1rem;
+  border: 1px lightgray solid;
+  border-radius: 1rem;
+}
+
+main form .bloque-form {
+  margin-bottom: 1rem;
+}
+
+main form .bloque-form:last-child {
+  margin-bottom: 0;
+}
+
+main form .bloque-form label {
+  display: block;
+  width: 100%;
+  margin-bottom: .25rem;
+}
+
+main form .bloque-form input,
+main form .bloque-form textarea {
+  width: 100%;
+  border-radius: .25rem;
+  border: 1px lightgray solid;
+  background: rgb(250,250,250);
+  font-size: inherit;
+  font-family: inherit;
+  padding: .5rem;
+  color: rgb(71,71,71);
+  font-weight: 300;
+}
+
+main form .bloque-form input:focus,
+main form .bloque-form textarea:focus {
+  outline: none;
+  background: white;
+}
+
+main form .bloque-form input + p.campo-invalido,
+main form .bloque-form textarea + p.campo-invalido {
+  text-align: left;
+  font-weight: 300;
+  color: firebrick;
+  font-size: 14px;
+  display: none;
+}
+
+main form .bloque-form button {
+  background: rgb(100, 120, 140);
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  color: whitesmoke;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+main form .bloque-form button:focus {
+  outline: none;
+}
+
+main form .bloque-form button:hover {
+  cursor: pointer;
+  background: rgb(60,80,100);
+}
+
+main form .bloque-form button.boton-bloque {
+  width: 100%;
+}
+
+main form .bloque-form button:disabled {
+  background: gray;
+  cursor: auto;
+}
+
+main form.formulario-invalido .bloque-form input:invalid,
+main form.formulario-invalido .bloque-form textarea:invalid {
+  border-color: firebrick;
+}
+
+main form.formulario-invalido .bloque-form input:valid,
+main form.formulario-invalido .bloque-form textarea:valid {
+  border-color: forestgreen;
+}
+
+main form.formulario-invalido .bloque-form input:invalid + .campo-invalido,
+main form.formulario-invalido .bloque-form textarea:invalid + .campo-invalido {
+  display: block;
+}
+
+
+
+/* ###### */
+/* FOOTER */
+/* ###### */
+footer {
+  padding: 2rem 0;
+}
+
+footer p, footer h4 {
+  color: whitesmoke;
+}
+
+footer h4 {
+  margin-bottom: .5rem;
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: .25rem;
+}
+
+footer p a {
+  color: white;
+}
+
+
+/* ############# */
+/* RESPONSIVISMO */
+/* ############# */
+@media screen and (max-width: 991px) {
+  .contenedor {
+    margin: 0;
+    padding: 0 1rem;
+    width: 100vw;
+  }
+
+  .zona-flex {
+    flex-flow: column nowrap;
+  }
+}

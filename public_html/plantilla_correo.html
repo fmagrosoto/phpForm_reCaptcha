@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto enviado al correo</title>
+
+  <style>
+    body {
+      background: whitesmoke;
+      font-family: sans-serif;
+      font-size: 16px;
+    }
+
+    .contenedor {
+      width: 600px;
+      margin: auto;
+    }
+
+    .cuerpo table th {
+      text-align: right;
+      background: gray;
+      color: whitesmoke;
+    }
+
+    .cuerpo table th, .cuerpo table td {
+      padding: 8px;
+    }
+
+    .footer p {
+      font-size: 14px;
+      margin: 0 0 5px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="logotipo">
+      <img src="https://via.placeholder.com/600x200?text=Logo" title="Nombre de la empresa">
+    </div>
+    <div class="titulo">
+      <h1>Formulario de contacto</h1>
+    </div>
+    <div class="cuerpo">
+      <h3>Alguien ha enviado un formulario desde tu página web.</h3>
+      <p>Aquí están los datos enviados:</p>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <td>{{nombre}}</td>
+        </tr>
+        <tr>
+          <th>Apellido paterno</th>
+          <td>{{apellidoP}}</td>
+        </tr>
+        <tr>
+          <th>Apellido materno</th>
+          <td>{{apellidoM}}</td>
+        </tr>
+        <tr>
+          <th>Correo</th>
+          <td>{{correo}}</td>
+        </tr>
+        <tr>
+          <th>Teléfono</th>
+          <td>{{telefono}}</td>
+        </tr>
+        <tr>
+          <th>Empresa</th>
+          <td>{{empresa}}</td>
+        </tr>
+        <tr>
+          <th>Comentarios</th>
+          <td>{{comentarios}}</td>
+        </tr>
+        <tr>
+          <th>Fecha</th>
+          <td>{{fecha}}</td>
+        </tr>
+      </table>
+      <p>Guarde este correo en un lugar seguro para futuras revisiones.</p>
+    </div>
+    <div class="footer">
+      <p><strong>phpForm con reCaptcha</strong></p>
+      <p>&copy;2020. Todos los Derechos Reservados</p>
+      <p>Fernando Magrosoto Vásquez.</p>
+      <p><a href="https://github.com/fmagrosoto/phpForm_reCaptcha">Clóname en GitHUb</a></p>
+    </div>
+  </div>
+</body>
+</html>
