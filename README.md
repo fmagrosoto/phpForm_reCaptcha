@@ -10,7 +10,7 @@
 ![Packagist](https://img.shields.io/badge/Stack-Lamp-yellowgreen.svg)
 ![Packagist](https://img.shields.io/badge/PHP-7.3.*-yellowgreen.svg)
 ![Packagist](https://img.shields.io/badge/License-MIT-lightgrey.svg)
-![Packagist](https://img.shields.io/badge/Status-Developing-red.svg)
+![Packagist](https://img.shields.io/badge/Status-Estable-red.svg)
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 ***
