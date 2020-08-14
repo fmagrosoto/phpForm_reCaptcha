@@ -11,6 +11,17 @@
     // refrescar la página.
     unset($_SESSION['msgAlert']);
   }
+
+  // reCaptcha
+  // Para que tengas acceso a reCaptcha debes de configurarlo desde el sitio oficial:
+  // https://google.com/recaptcha
+  // Cuando lo configures, reCaptcha te va a proporcionar dos claves, una pública y otra secreta.
+  // Aquí va la clave pública:
+  $claveSitio = '6Lcs374ZAAAAAK4Ly3qBAORIHoAw43O0Dd5n9FrY';
+  // También debes de agregar una dirección para tener en el sitio web el javascript necesario,
+  // como lo muestra la línea 178 de esta página.
+  // Y agregar una línea de código donde quieras que muestre el reCaptcha tal y como lo
+  // muestra en la línea 142, acuérdate de agregar la clave del sitio ($claveSitio).
 ?>
 <!doctype html>
 <html lang="es">
@@ -128,6 +139,7 @@
 
           <div class="zona-flex flex-centrado bloque-form">
             <div class="item-flex-33 bloque-form">
+              <div class="g-recaptcha" data-sitekey="<?php echo $claveSitio ?>" style="margin-bottom: 1rem"></div>
               <button type="submit" class="boton-bloque">
                 Enviar formulario
               </button>
@@ -163,6 +175,7 @@
     </div>
   </footer>
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="/js/magia.js"></script>
 </body>
 </html>

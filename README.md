@@ -37,6 +37,11 @@ Por si tienes algunas dudas en la validación de campos y en estilos más modern
 >
 > https://phpform-recaptcha.herokuapp.com/
 
+**NOTA**: Este proyecto está hecho para ejemplificar el uso de **Google reCaptcha**, por lo que opté por usar
+la función ```mail()``` de PHP por la facilidad de uso. Esta función no siempre está activada y no es la mejor manera de mandar
+correos, te recomiendo que uses algún *script* de terceros para enviar correos más complejos a través
+de **SMTP**.
+
 ## PROYECTO
 
 * Historia: agosto, 2020
