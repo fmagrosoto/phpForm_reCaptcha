@@ -23,6 +23,10 @@
   <meta name="description" content="Hacer un formulario con PHP y reCaptcha de Google">
   <meta name="keywords" content="fmagrosoto, php, recaptcha, web developer, github">
   <meta name="robots" content="index,follow">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <style>
     /* GitHub Ribbon Style */
@@ -147,7 +151,7 @@
             </a>
           </p>
           <p class="marriba-1" style="text-align: center">
-            <a target="_blank" href="https://validator.w3.org/">
+            <a target="_blank" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fphpform-recaptcha.herokuapp.com%2F">
               <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png"
                    width="165" height="64"
                    alt="HTML5 Powered with CSS3 / Styling, and Semantics"
